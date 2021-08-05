@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="author" content="Adrian Tworek" />
+    <meta
+      name="description"
+      content="Project created to visualize some of the most popular sorting algorithms"
+    />
+    <meta
+      name="keywords"
+      content="sorting, algorithms, visualization, javascript, bubble sort, selection sort, merge sort, quick sort, radix sort"
+    />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./index.js" defer></script>
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar__container container">
+          <!-- Logo -->
+          <div class="navbar__left">
+            <h1 class="navbar__logo">
+              Sorting Visualizer <i class="fas fa-sort-numeric-up"></i>
+            </h1>
+          </div>
+
+          <!-- Sorting configuration part -->
+          <div class="navbar__right">
+            <div class="navbar__range">
+              <label for="size">Size</label>
+              <input
+                name="size"
+                id="size"
+                type="range"
+                min="10"
+                max="50"
+                value="20"
+              />
+            </div>
+
+            <div class="navbar__range">
+              <label for="speed">Speed</label>
+              <input
+                class="speed"
+                id="speed"
+                type="range"
+                min="10"
+                max="100"
+                value="70"
+              />
+            </div>
+
+            <div class="navbar__select-container">
+              <select name="algorithm" class="navbar__select" id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="radix">Radix Sort</option>
+              </select>
+              <span class="navbar__arrow"
+                ><i class="fas fa-arrow-down"></i
+              ></span>
+            </div>
+
+            <button class="btn btn--primary" id="sortBtn">Sort</button>
+          </div>
+        </div>
+      </nav>
+
+      <main class="sorting">
+        <div class="sorting__container container" id="sortingContainer"></div>
+
+        <!-- Quick Sort legend -->
+        <div class="sorting__legend" id="quickLegend">
+          <div class="sorting__quick">
+            <span></span>
+            <div>pivot</div>
+          </div>
+          <div class="sorting__quick">
+            <span></span>
+            <div>smaller than pivot</div>
+          </div>
+          <div class="sorting__quick">
+            <span></span>
+            <div>replacing</div>
+          </div>
+        </div>
+
+        <!-- Radix Sort legend -->
+        <div class="sorting__legend" id="radixLegend">
+          <div class="sorting__radix">0</div>
+          <div class="sorting__radix">1</div>
+          <div class="sorting__radix">2</div>
+          <div class="sorting__radix">3</div>
+          <div class="sorting__radix">4</div>
+          <div class="sorting__radix">5</div>
+          <div class="sorting__radix">6</div>
+          <div class="sorting__radix">7</div>
+          <div class="sorting__radix">8</div>
+          <div class="sorting__radix">9</div>
+        </div>
+
+        <button class="btn btn--secondary generateBtn" id="generateBtn">
+          Generate
+        </button>
+      </main>
+      <!-- Dark theme toggle checkbox -->
+      <div class="dark-theme">
+        <input id="darkTheme" class="dark-theme__checkbox" type="checkbox" />
+        <label for="darkTheme">&shy;</label>
+      </div>
+    </div>
+  </body>
+</html>
