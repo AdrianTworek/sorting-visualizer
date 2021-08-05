@@ -19,7 +19,14 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env"
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": 3,
+          "targets": "> 0.25%, not dead"
+        }
+      ]
     ]
   },
   "homepage": "https://github.com/AdrianTworek/sorting-visualizer#readme",
@@ -29,5 +36,9 @@
     "babel-loader": "^8.2.2",
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "core-js": "^3.16.0",
+    "regenerator-runtime": "^0.13.9"
   }
 }
