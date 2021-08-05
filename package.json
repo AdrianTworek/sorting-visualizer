@@ -17,6 +17,11 @@
   "bugs": {
     "url": "https://github.com/AdrianTworek/sorting-visualizer/issues"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "homepage": "https://github.com/AdrianTworek/sorting-visualizer#readme",
   "devDependencies": {
     "@babel/core": "^7.15.0",
