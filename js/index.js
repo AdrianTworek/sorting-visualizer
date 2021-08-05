@@ -1,9 +1,9 @@
 // Import algorithms
-import bubbleSort from './algorithms/bubble.js'
-import selectionSort from './algorithms/selection.js'
-import mergeSort from './algorithms/merge.js'
-import quickSort from './algorithms/quick.js'
-import radixSort from './algorithms/radix.js'
+import bubbleSort from '../algorithms/bubble.js'
+import selectionSort from '../algorithms/selection.js'
+import mergeSort from '../algorithms/merge.js'
+import quickSort from '../algorithms/quick.js'
+import radixSort from '../algorithms/radix.js'
 
 // Configuration components (range, select inputs, main section container)
 const size = document.getElementById('size')
