@@ -8,6 +8,9 @@ Algoritms:
 - **quick sort**
 - **radix sort**
 
+## Perfect Score Lighthouse audit
+<img width="499" alt="Zrzut ekranu 2021-08-6 o 01 55 39" src="https://user-images.githubusercontent.com/62119460/128435907-c6c862d5-335e-4ffd-b421-5faa3e3d9ef3.png">
+
 ## Preview
 ### Mobile view
 <img width="374" alt="Zrzut ekranu 2021-08-6 o 01 23 46" src="https://user-images.githubusercontent.com/62119460/128434148-0f2a610d-5a93-483d-a2cd-2b5f3778dff5.png">
@@ -28,6 +31,7 @@ Algoritms:
 - **npm**
 - **webpack**
 - **babel**
+- **Figma**
 
 ## How to run this project
 1. Download the project files
