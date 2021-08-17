@@ -209,6 +209,15 @@ body.dark .generateBtn {
   box-shadow: -14rem 0 0 13.7rem var(--clr-primary);
 }
 
+.navbar__range input::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: linear-gradient(var(--clr-primary), royalblue);
+  box-shadow: -14rem 0 0 13.7rem var(--clr-primary);
+}
+
 .navbar__select-container {
   position: relative;
   display: flex;
